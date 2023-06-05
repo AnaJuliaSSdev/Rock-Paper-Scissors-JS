@@ -51,6 +51,9 @@ function playGame(playerMove) {
     score.ties++;
   }
 
+  //LocalStorage is used to store the game's score in the browser's cache;
+  //For this, the "score" object is converted into a string, and then stored 
+  //in localStorage;
   localStorage.setItem('score', JSON.stringify(score));
 
   updateScoreElements();
