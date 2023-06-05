@@ -10,6 +10,8 @@
   <p class="title">
     Rock Paper Scissors
   </p>
+  <!-- When the user chooses a move, the "playGame" function is called,
+  which has the selected move as a parameter -->
   <button onclick="
       
       playGame('rock'); 
@@ -31,7 +33,10 @@
   <p class="js-result result"></p>
   <p class="js-moves"></p>
   <p class="js-score score"></p>
-
+  
+  <!--The player can also reset the score,
+  and in this case, the attributes of the score object are reset, 
+  as well as the Score of localStorage; -->
   <button onclick="
     score.wins =0; 
     score.losses=0; 
